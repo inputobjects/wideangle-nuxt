@@ -1,5 +1,4 @@
 import { defineNuxtModule, addPlugin, addImports, createResolver, useLogger } from '@nuxt/kit'
-import { defu } from 'defu'
 import { fileURLToPath } from 'url'
 
 const logger = useLogger('nuxt:wideangle')
@@ -36,8 +35,6 @@ export default defineNuxtModule<ModuleOptions>({
 
     logger.info(`Module options: ${JSON.stringify(options)}`);
     const resolver = createResolver(import.meta.url)
-
-    nuxt.options.runtimeConfig.public.wideangle = defu(nuxt.options.runtimeConfig.public.wideangle, options);
 
     addImports({
       name: "useWaaEvent",
