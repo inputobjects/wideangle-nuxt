@@ -3,6 +3,8 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
+![Wide Angle Analytics Large Logo](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/7efee4f1-d9e1-4b54-a5cd-257d13494f41)
+
 # Wide Angle Analytics module for Nuxt
 
 Enable **privacy-friendly** web analytics in your [Nuxt 3.x](https://nuxt.com/) application with our official plugin.
@@ -39,7 +41,7 @@ The Wide Angle Analytics plugin must be initialized with configuration object as
 option|description|required|default|example
 ------|-----------|--------|-------|-------
 siteId| The Site ID from Wide Angle Site settings| :white_check_mark: | _none_ | 8D27G3B9ACA01F4241
-domain| Domain hosting the script, can be found in Wide Angle Analytics Site settings | :white_check_mark: | _none_ | stats.wideangle.co
+domain| Domain hosting the script, can be found in Wide Angle Analytics Site settings | :x: | stats.wideangle.co | your.domain.com
 fingerprint | Should script use browser fingerprinting; this might require collecting consent depeing on the applicable laws | :x: | false | true
 supressDnt | Should script ingore Do Not Track browser setting. If not enabled, not events will be sent if user's browser has DNT enabled | :x: | false | true
 includeParams | An array of query parameters that can be passed as part of tracking event. By default only `utm_*` and `ref` parameters are passed in the event | :x: | `[]` | `['sessionId', 'offset']`
@@ -131,7 +133,11 @@ const sendEvent = async () => {
 
 #### Icon
 
+![Wide Angle Analytics Icon](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/8445ed30-2de0-43f3-ba8c-43c67598e7dd)
+
 #### Full Logo
+
+![Wide Angle Analytics Large Logo](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/7efee4f1-d9e1-4b54-a5cd-257d13494f41)
 
 
 <!-- Badges -->
