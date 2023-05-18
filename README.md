@@ -130,14 +130,7 @@ const sendEvent = async () => {
 ```
 
 ### Module Assets
-
-#### Icon
-
-![Wide Angle Analytics Icon](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/8445ed30-2de0-43f3-ba8c-43c67598e7dd)
-
-#### Full Logo
-
-![Wide Angle Analytics Large Logo](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/7efee4f1-d9e1-4b54-a5cd-257d13494f41)
+You can find high-resolution Wide Angle Analytics logo and icon on our [media page](https://wideangle.co/media).
 
 
 <!-- Badges -->
