@@ -126,13 +126,13 @@ Example:
 </template>
 
 <script setup>
-import { useWideAngle } from '#imports'
+import { useWaaEvent } from '#imports'
 const sendEvent = async () => {
   const params = {
     session: 'cjhw92nf9aq',
     cohort: 'c1233'
   }  
-  useWideAngle('interest', params);  
+  useWaaEvent('interest', params);  
 }
 </script>
 ```

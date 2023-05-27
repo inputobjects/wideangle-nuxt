@@ -1,6 +1,6 @@
 {
   "name": "wideangle-nuxt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wide Angle Analytics module for Nuxt",
   "repository": "inputobjects/wideangle-nuxt",
   "author": "Wide Angle Analytics <developers@wideangle.co>",
