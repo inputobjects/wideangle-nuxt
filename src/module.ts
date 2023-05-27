@@ -31,10 +31,8 @@ export default defineNuxtModule<ModuleOptions>({
   },
   setup (options, nuxt) {
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-    nuxt.options.build.transpile.push(runtimeDir)
-
-    logger.info(`Module options: ${JSON.stringify(options)}`);
-    const resolver = createResolver(import.meta.url)
+    nuxt.options.build.transpile.push(runtimeDir);
+    const resolver = createResolver(import.meta.url);
 
     addImports({
       name: "useWaaEvent",

@@ -27,8 +27,12 @@ You can enable Wide Angle Analytics in your Nuxt projects in just few steps. No 
 export default defineNuxtConfig({
   modules: ['wideangle-nuxt'],
 
-  wideangle: {
-    siteId: "8D27G3B9ACA01F4241"
+  runtimeConfig: {
+    public: {
+      wideangle: {
+        siteId: "8D27G3B9ACA01F4241"
+      }
+    }
   }
 })
 ```
@@ -57,15 +61,19 @@ Example:
 export default defineNuxtConfig({
   modules: ['wideangle-nuxt'],
 
-  wideangle: {
-    siteId: "8D27G3B9ACA01F4241",
-    domain: "your.domain.com",
-    fingerprint: false,
-    supressDnt: true,
-    includeParams: ['q', 'customerId'],
-    excludePaths: ['^/admin.*'],
-    ignoreHash: true
-  }u
+  runtimeConfig: {
+    public: {
+      wideangle: {
+        siteId: "8D27G3B9ACA01F4241",
+        domain: "your.domain.com",
+        fingerprint: false,
+        supressDnt: true,
+        includeParams: ['q', 'customerId'],
+        excludePaths: ['^/admin.*'],
+        ignoreHash: true
+      }
+    }  
+  }
 })
 ```
 
