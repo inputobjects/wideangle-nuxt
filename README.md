@@ -153,3 +153,7 @@ You can find high-resolution Wide Angle Analytics logo and icon on our [media pa
 
 [npm-version-src]: https://img.shields.io/npm/v/wideangle-nuxt/latest.svg?style=flat&colorA=18181B&colorB=28CF8DD
 [npm-version-href]: https://npmjs.com/package/wideangle-nuxt
+
+[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?&logo=nuxt.js
+[nuxt-href]: https://nuxt.com
+
