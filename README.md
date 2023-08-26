@@ -1,6 +1,8 @@
 # Wide Angle Analytics Nuxt3 Module
 
 [![License][license-src]][license-href]
+[![Latest][npm-version-src]][npm-version-href]
+[![Downloads][npm-downloads-src]][npm-downloads-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
 ![Wide Angle Analytics Large Logo](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/7efee4f1-d9e1-4b54-a5cd-257d13494f41)
@@ -143,8 +145,11 @@ You can find high-resolution Wide Angle Analytics logo and icon on our [media pa
 
 <!-- Badges -->
 
-[license-src]: https://img.shields.io/npm/l/wideangle.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/wideangle
+[license-src]: https://img.shields.io/npm/l/wideangle-nuxt.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://opensource.org/license/apache-2-0/
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
-[nuxt-href]: https://nuxt.com
+[npm-downloads-src]: https://img.shields.io/npm/dm/wideangle-nuxt.svg?style=flat&colorA=18181B&colorB=28CF8DD
+[npm-downloads-href]: https://npmjs.com/package/wideangle-nuxt
+
+[npm-version-src]: https://img.shields.io/npm/v/wideangle-nuxt/latest.svg?style=flat&colorA=18181B&colorB=28CF8DD
+[npm-version-href]: https://npmjs.com/package/wideangle-nuxt
