@@ -41,6 +41,8 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.build.transpile.push(runtimeDir);
     const resolver = createResolver(import.meta.url);
 
+    logger.info('Adding Wide Angle Analytics runtime plugin');
+
     addImports({
       name: "useWaaEvent",
       as: "useWaaEvent",

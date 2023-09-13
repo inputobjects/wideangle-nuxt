@@ -2,7 +2,7 @@ import { defineNuxtPlugin, useRuntimeConfig } from '#imports';
 import { ref } from 'vue';
 import { initWideAngle } from 'wideangle-vuejs';
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin(() => {
   if(process.server) {
     console.warn("[WAA] Plugin will not be enabled on server side.");
     return;

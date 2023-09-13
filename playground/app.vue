@@ -1,7 +1,9 @@
 <template>
   <main>
     <h1>Nuxt Application</h1>
-    <button @click="trackClick">Track Click</button>
+    <button @click="trackClick">
+      Track Click
+    </button>
   </main>
 </template>
 
