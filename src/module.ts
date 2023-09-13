@@ -1,16 +1,17 @@
 import { defineNuxtModule, addPlugin, addImports, createResolver, useLogger } from '@nuxt/kit'
+import { defu } from 'defu'
 import { fileURLToPath } from 'url'
 
 const logger = useLogger('nuxt:wideangle')
 
 export interface ModuleOptions {
   siteId?: string
-  domain?: string
-  fingerprint?: boolean
-  supressDnt?: boolean
-  includeParams?: string[]
-  excludePaths?: string[]
-  ignoreHash?: boolean
+  domain: string
+  fingerprint: boolean
+  supressDnt: boolean
+  includeParams: string[]
+  excludePaths: string[]
+  ignoreHash: boolean
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -31,6 +32,12 @@ export default defineNuxtModule<ModuleOptions>({
   },
   setup (options, nuxt) {
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
+
+    nuxt.options.runtimeConfig.public.wideangle = defu(
+      nuxt.options.runtimeConfig.public.wideangle,
+      options,
+    )
+
     nuxt.options.build.transpile.push(runtimeDir);
     const resolver = createResolver(import.meta.url);
 
