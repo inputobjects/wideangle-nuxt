@@ -1,6 +1,6 @@
 {
   "name": "wideangle-nuxt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wide Angle Analytics module for Nuxt",
   "repository": "inputobjects/wideangle-nuxt",
   "author": "Wide Angle Analytics <developers@wideangle.co>",
@@ -39,7 +39,8 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.4.3",
-    "wideangle-vuejs": "1.0.0"
+    "wideangle-vuejs": "1.0.0",
+    "defu": "^6.1.2"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.1.1",
