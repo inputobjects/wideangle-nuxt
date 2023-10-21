@@ -16,7 +16,7 @@ Enable **privacy-friendly** web analytics in your [Nuxt 3.x](https://nuxt.com/) 
 
 # How to get started
 
-You can enable Wide Angle Analytics in your Nuxt projects in just a a few steps. No complex configuration needed, as our sane defaults provide you with a reliable and privacy-centric deployment out of the box. 
+You can enable Wide Angle Analytics in your Nuxt projects in just a few steps. No complex configuration needed, as our sane defaults provide you with a reliable and privacy-centric deployment out of the box. 
 
 1. Go to the [Wide Angle](https://wideangle.co) website and create an account. You can enoy a free 14-day trail. No Credit Card is required. [Learn more.](https://wideangle.co/documentation/create-account) 
 2. [Create a new site](https://wideangle.co/documentation/create-and-configure-site) and activate it.
