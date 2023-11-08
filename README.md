@@ -16,15 +16,15 @@ Enable **privacy-friendly** web analytics in your [Nuxt 3.x](https://nuxt.com/) 
 
 # How to get started
 
-You can enable Wide Angle Analytics in your Nuxt projects in just few steps. No complex configuration needed as our sane defaults give you reliable and privacy centric deployment out of the box. 
+You can enable Wide Angle Analytics in your Nuxt projects in just a few steps. No complex configuration needed, as our sane defaults provide you with a reliable and privacy-centric deployment out of the box. 
 
-1. Go to [Wide Angle](https://wideangle.co) website, create an account. You can create free 14-day trail. No Credit Card is required. [Learn more.](https://wideangle.co/documentation/create-account) 
-2. [Create new Site](https://wideangle.co/documentation/create-and-configure-site) and activate it.
-3. Install `wideangle-vuejs` plugin in your Vue application.
+1. Go to the [Wide Angle](https://wideangle.co) website and create an account. You can enjoy a free 14-day trail. No Credit Card is required. [Learn more.](https://wideangle.co/documentation/create-account) 
+2. [Create a new site](https://wideangle.co/documentation/create-and-configure-site) and activate it.
+3. Install the `wideangle-vuejs` plugin in your Vue application.
 
 ```npm install wideangle-nuxt```
 
-4. Enable and configure module.
+4. Enable and configure the module.
 
 ```javascript
 export default defineNuxtConfig({
@@ -42,20 +42,20 @@ export default defineNuxtConfig({
 
 # Configuring Wide Angle Analytics plugin
 
-The Wide Angle Analytics plugin must be initialized with configuration object as there are required settings without defaults.
+The Wide Angle Analytics plugin must be initialized with a configuration object as there are required settings without defaults.
 
 
 option|description|required|default|example
 ------|-----------|--------|-------|-------
-siteId| The Site ID from Wide Angle Site settings| :white_check_mark: | _none_ | 8D27G3B9ACA01F4241
+siteId| The Site ID from the Wide Angle Site settings| :white_check_mark: | _none_ | 8D27G3B9ACA01F4241
 domain| Domain hosting the script, can be found in Wide Angle Analytics Site settings | :x: | stats.wideangle.co | your.domain.com
-fingerprint | Should script use browser fingerprinting; this might require collecting consent depeing on the applicable laws | :x: | false | true
-supressDnt | Should script ingore Do Not Track browser setting. If not enabled, not events will be sent if user's browser has DNT enabled | :x: | false | true
+fingerprint | Should script use browser fingerprinting; this might require collecting consent depending on the applicable laws | :x: | false | true
+supressDnt | Should script ingore Do Not Track browser setting. If not enabled, no events will be sent if user's browser has DNT enabled | :x: | false | true
 includeParams | An array of query parameters that can be passed as part of tracking event. By default only `utm_*` and `ref` parameters are passed in the event | :x: | `[]` | `['sessionId', 'offset']`
 excludePaths | An array of URL paths that should not trigger default events such as page view, page leave | :x: | `[]` | `['^/wp-admin/.*', ]`
-ignoreHash | If enabled, change in the URL fragment will not trigger page view event | :x: | false | true
+ignoreHash | If enabled, a change in the URL fragment will not trigger page view event | :x: | false | true
 
-You will find more details about these settings in [Wide Angle Analytics documentation](https://wideangle.co/documentation/configure-site).
+You can find more details about these settings in the [Wide Angle Analytics documentation](https://wideangle.co/documentation/configure-site).
 
 
 Example:
@@ -105,7 +105,7 @@ Wide Angle supports three specialized events:
 * downloads 
 * custom actions
 
-Site has to have these event enable in Wide Angle Analytics configuration prior to usage. Otherwise the tracker script will not sent these events. Consult [official documentation](https://wideangle.co/documentation/tracking-custom-actions) regarding how to enable event handling. 
+Site has to have these events enabled in the Wide Angle Analytics configuration prior to usage. Otherwise the tracker script will not send these events. Consult the [official documentation](https://wideangle.co/documentation/tracking-custom-actions) regarding how to enable event handling. 
 
 ### Tracking Clicks 
 
@@ -119,7 +119,7 @@ Depending on the configured mode, the **Download Event** will fire automatically
 
 ### Tracking Custom Actions
 
-Custom action are the most flexible and can be triggered directly from Vue components. As such their usage is not limitted due to Shadow DOM.
+Custom actions are the most flexible and can be triggered directly from Vue components. As such, their usage is not limitted due to the Shadow DOM.
 
 Example:
 
@@ -141,7 +141,7 @@ const sendEvent = async () => {
 ```
 
 ### Module Assets
-You can find high-resolution Wide Angle Analytics logo and icon on our [media page](https://wideangle.co/media).
+You can find a high-resolution Wide Angle Analytics logo and icon on our [media page](https://wideangle.co/media).
 
 
 <!-- Badges -->
