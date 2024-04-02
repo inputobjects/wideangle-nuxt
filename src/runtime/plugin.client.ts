@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import { initWideAngle } from 'wideangle-vuejs';
 
 export default defineNuxtPlugin(() => {
-  if(process.server) {
+  if(import.meta.server) {
     console.warn("[WAA] Plugin will not be enabled on server side.");
     return;
   }
