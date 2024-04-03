@@ -22,7 +22,7 @@ You can enable Wide Angle Analytics in your Nuxt projects in just a few steps. N
 2. [Create a new site](https://wideangle.co/documentation/create-and-configure-site) and activate it.
 3. Install the `wideangle-vuejs` plugin in your Vue application.
 
-```npm install wideangle-nuxt```
+```npx nuxi@latest module add wideangle
 
 4. Enable and configure the module.
 
