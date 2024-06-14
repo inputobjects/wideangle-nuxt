@@ -19,7 +19,7 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'wideangle',
     configKey: 'wideangle',
     compatibility: {
-      nuxt: '^3'
+      nuxt: '>=3'
     }
   },
   defaults: {
