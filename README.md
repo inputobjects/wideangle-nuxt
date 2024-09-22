@@ -86,9 +86,7 @@ export default defineNuxtConfig({
 The Wide Angle Analytics provides an instance of `waa` which can be then injected to your component. 
 
 ```javascript
-import { useWideAngle } from '#imports';
-
-useWideAngle('purchase', {'basket_element': 'dress'}, {'basket_item_price': 123.44});
+useWaaEvent('purchase', {'basket_element': 'dress'}, {'basket_item_price': 123.44});
 ```
 
 You will find a fully functional example in this [repository](playground/app.vue).
