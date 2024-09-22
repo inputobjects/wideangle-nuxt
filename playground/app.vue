@@ -11,7 +11,7 @@
 import { useWaaEvent } from "#imports";
 
 function trackClick() {
-  useWaaEvent("foo", {"name": "bar"});
+  useWaaEvent("foo", {"name": "bar"}, {"count" : 2});
 }
 </script>
 

@@ -3,8 +3,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       wideangle: {
-        siteId: "8D27G3B9ACA01F4241",
-        domain: "wideangle.local:3000",
+        siteId: "7982G3B9ACB1BF4380",
         fingerprint: true,
         supressDnt: true
       }
