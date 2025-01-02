@@ -6,7 +6,7 @@
 [![Nuxt][nuxt-src]][nuxt-href]
 [![Wide Angle][wideangle-src]][wideangle-href]
 
-![Wide Angle Analytics Large Logo](https://github.com/inputobjects/wideangle-nuxt/assets/4896588/7efee4f1-d9e1-4b54-a5cd-257d13494f41)
+![Wide Angle Analytics Large Logo](https://github.com/wideangleanalytics/wideangle-nuxt/assets/4896588/7efee4f1-d9e1-4b54-a5cd-257d13494f41)
 
 # Wide Angle Analytics module for Nuxt
 
