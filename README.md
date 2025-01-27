@@ -56,7 +56,7 @@ suppressDnt | Should script ingore Do Not Track browser setting. If not enabled,
 includeParams | An array of query parameters that can be passed as part of tracking event. By default only `utm_*` and `ref` parameters are passed in the event | :x: | `[]` | `['sessionId', 'offset']`
 excludePaths | An array of URL paths that should not trigger default events such as page view, page leave | :x: | `[]` | `['^/wp-admin/.*', ]`
 ignoreHash | If enabled, a change in the URL fragment will not trigger page view event | :x: | false | true
-consentMarket | Name of cookie (with or without) which presence is treated as implied consent; when not defined, consent is not determined by cookie | :x: | n/a | `WAA_CONSENT=true`
+consentMarker | Name of cookie (with or without) which presence is treated as implied consent; when not defined, consent is not determined by cookie | :x: | n/a | `WAA_CONSENT=true`
 
 You can find more details about these settings in the [Wide Angle Analytics documentation](https://wideangle.co/documentation/configure-site).
 
