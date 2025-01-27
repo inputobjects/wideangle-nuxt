@@ -8,10 +8,11 @@ export interface ModuleOptions {
   siteId?: string
   domain: string
   fingerprint: boolean
-  supressDnt: boolean
+  suppressDnt: boolean
   includeParams: string[]
   excludePaths: string[]
   ignoreHash: boolean
+  consentMarker: string
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -25,10 +26,11 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     domain: "stats.wideangle.co",
     fingerprint: false,
-    supressDnt: false,
+    suppressDnt: false,
     includeParams: [],
     excludePaths: [],
-    ignoreHash: false
+    ignoreHash: false,
+    consentMarker: null
   },
   setup (options, nuxt) {
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
