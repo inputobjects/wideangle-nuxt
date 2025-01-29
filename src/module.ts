@@ -1,6 +1,5 @@
-import { defineNuxtModule, addPlugin, addImports, createResolver, useLogger } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, addImportsDir, createResolver, useLogger } from '@nuxt/kit'
 import { defu } from 'defu'
-import { fileURLToPath } from 'url'
 
 const logger = useLogger('nuxt:wideangle')
 
@@ -20,40 +19,32 @@ export default defineNuxtModule<ModuleOptions>({
     name: 'wideangle',
     configKey: 'wideangle',
     compatibility: {
-      nuxt: '>=3'
-    }
+      nuxt: '>=3',
+    },
   },
   defaults: {
-    domain: "stats.wideangle.co",
+    domain: 'stats.wideangle.co',
     fingerprint: false,
     suppressDnt: false,
     includeParams: [],
     excludePaths: [],
     ignoreHash: false,
-    consentMarker: null
+    consentMarker: undefined,
   },
-  setup (options, nuxt) {
-    const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-
+  setup(options, nuxt) {
+    const resolver = createResolver(import.meta.url)
     nuxt.options.runtimeConfig.public.wideangle = defu(
       nuxt.options.runtimeConfig.public.wideangle,
       options,
     )
 
-    nuxt.options.build.transpile.push(runtimeDir);
-    const resolver = createResolver(import.meta.url);
+    nuxt.options.build.transpile.push(resolver.resolve('./runtime'))
 
-    logger.info('Adding Wide Angle Analytics runtime plugin');
+    logger.info('Adding Wide Angle Analytics (useWideAngle) import')
+    addImportsDir(resolver.resolve('./runtime/composables'))
 
-    addImports({
-      name: "useWaaEvent",
-      as: "useWaaEvent",
-      from: resolver.resolve('./runtime/composables/useWaaEvent')
-    });
+    logger.info('Adding Wide Angle Analytics runtime plugin')
+    addPlugin(resolver.resolve('./runtime/plugin.client'))
 
-    addPlugin({
-      src: resolver.resolve('./runtime/plugin.client')
-    });
-
-  }
+  },
 })

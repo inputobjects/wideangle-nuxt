@@ -87,11 +87,21 @@ export default defineNuxtConfig({
 
 # Usage 
 
-The Wide Angle Analytics provides an instance of `waa` which can be then injected to your component. 
+The Wide Angle Analytics provides a composable which can be used in your component. 
 
 ```javascript
-const waa = useWaa();
-waa.dispatchEvent('purchase', {'basket_element': 'dress'}, {'basket_item_price': 123.44});
+<template>
+  <button @click="sendEvent">Send Event</button>
+</template>
+
+<script setup>
+  import { useWideAngle } from '#imports';
+
+  const sendEvent = () => {
+    useWideAngle().dispatchEvent('basket-open', {'page': 'catalogue'}, {'item-price': 599.00, 'basket-total': 1299.00});
+  }
+</script>
+
 ```
 
 You will find a fully functional example in this [repository](playground/app.vue).
@@ -132,16 +142,14 @@ Example:
 </template>
 
 <script setup>
-import { useWaa } from '#imports'
-
-const waa = useWaa();
+import { useWideAngle } from '#imports'
 
 const sendEvent = async () => {
   const params = {
     session: 'cjhw92nf9aq',
     cohort: 'c1233'
-  }  
-  waa.dispatchEvent('interest', params);  
+  }
+  useWideAngle().dispatchEvent('interest', params);  
 }
 </script>
 ```
@@ -196,9 +204,9 @@ Example usage:
 ```vue
 <script setup>
 
-import { useWaa } from '#imports'
+import { useWideAngle } from '#imports'
 
-const waa = useWaa();
+const waa = useWideAngle();
 
 waa.recordConsent('FHJ44111');
 
